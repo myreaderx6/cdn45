@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Bugs in package favicon.png in unstable -- Debian Bug report logs</TITLE>
+<link rel="stylesheet" href="/css/bugs.css" type="text/css"></HEAD>
+<BODY onload="pagemain();">
+<DIV id="status_mask"></DIV>
+<H1>Debian Bug report logs: Bugs in package favicon.png in unstable</H1>
+<p>There is no maintainer for favicon.png. This means that this package no longer exists (or never existed). Please do not report new bugs against this package. </p>
+<HR><H2>No reports found!</H2></HR>
+<script type="text/javascript">
+<!--
+toggle_extra_status_visible();
+function pagemain() {
+	toggle(1);
+//	toggle(2);
+	enable(1);
+}
+
+var visible_extra_status = 0;
+
+function toggle_extra_status_visible() {
+  all_divs = document.getElementsByTagName("div");
+  for (var i = 0; i < all_divs.length; i++) {
+      if (all_divs[i].className == "shortbugstatusextra") {
+         if (all_divs[i].style.position == 'absolute' ) {
+	    all_divs[i].style.position = "static";
+      	    all_divs[i].style.display = "block";
+	    all_divs[i].style.zIndex = 0;
+	    all_divs[i].style.border = 0;
+	    var subspans = all_divs[i].getElementsByTagName("span");
+	    for (var j = 0; j < subspans.length; j++) {
+   	    	subspans[j].style.display = "inline";
+	    }
+         }
+	 else {
+	    all_divs[i].style.position = "absolute";
+      	    all_divs[i].style.display = "none"
+	    all_divs[i].style.zIndex = 2;
+	    all_divs[i].style.border = "#000 1px solid";
+	    var subspans = all_divs[i].getElementsByTagName("span");
+	    for (var j = 0; j < subspans.length; j++) {
+   	    	subspans[j].style.display = "block";
+	    }
+         }
+      }
+  }
+}
+
+function extra_status_visible(id) {
+  var m = document.getElementById("status_mask");
+  if (visible_extra_status) {
+     var t = document.getElementById("extra_status_"+visible_extra_status);
+     t.style.display = "none";
+     if (m) {
+        m.style.display = "none";
+     }
+     if (visible_extra_status == id) {
+     	visible_extra_status = 0;
+        return;
+     }
+     visible_extra_status = 0;
+  }
+  var e = document.getElementById("extra_status_"+id);
+  if (e) {
+     e.style.display = "block";
+     visible_extra_status = id;
+     if (m) {
+        m.onclick = function() { extra_status_visible(id); };
+        m.style.display = "block";
+     }
+  }
+}
+
+function setCookie(name, value, expires, path, domain, secure) {
+  var curCookie = name + "=" + escape(value) +
+      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+function save_cat_cookies() {
+  var cat = document.categories.categorisation.value;
+  var exp = new Date();
+  exp.setTime(exp.getTime() + 10 * 365 * 24 * 60 * 60 * 1000);
+  var oldexp = new Date();
+  oldexp.setTime(oldexp.getTime() - 1 * 365 * 24 * 60 * 60 * 1000);
+  var lev;
+  var done = 0;
+
+  var u = document.getElementById("users");
+  if (u != null) { u = u.value; }
+  if (u == "") { u = null; }
+  if (u != null) {
+      setCookie("cat" + cat + "_users", u, exp, "/");
+  } else {
+      setCookie("cat" + cat + "_users", "", oldexp, "/");
+  }
+
+  var bits = new Array("nam", "pri", "ttl", "ord");
+  for (var i = 0; i < 4; i++) {
+      for (var j = 0; j < bits.length; j++) {
+          var e = document.getElementById(bits[j] + i);
+	  if (e) e = e.value;
+	  if (e == null) { e = ""; }
+	  if (j == 0 && e == "") { done = 1; }
+	  if (done || e == "") {
+              setCookie("cat" + cat + "_" + bits[j] + i, "", oldexp, "/");
+	  } else {
+              setCookie("cat" + cat + "_" + bits[j] + i, e, exp, "/");
+	  }
+      }
+  }
+}
+
+function toggle(i) {
+        var a = document.getElementById("a_" + i);
+        if (a) {
+             if (a.style.display == "none") {
+                     a.style.display = "";
+             } else {
+                     a.style.display = "none";
+             }
+        }
+}
+
+function enable(x) {
+    for (var i = 1; ; i++) {
+        var a = document.getElementById("b_" + x + "_" + i);
+        if (a == null) break;
+        var ischecked = a.checked;
+        for (var j = 1; ; j++) {
+            var b = document.getElementById("b_" + x + "_"+ i + "_" + j);
+            if (b == null) break;
+            if (ischecked) {
+                b.disabled = false;
+            } else {
+                b.disabled = true;
+            }
+        }
+    }
+}
+-->
+</script>
+<h2 class="outstanding"><!--<a class="options" href="javascript:toggle(1)">-->Options<!--</a>--></h2>
+<form method="GET">
+<input type="hidden" name="_fo_combine_key_fo_searchkey_value_fo_searchvalue" value="1">
+<input type="hidden" name="form_options" value="1">
+<table class="forms">
+<tr><td><h2>Select bugs</h2>
+</td>
+<td>
+<nobr><select name="_fo_searchkey">
+<option value="package" selected>in package</option>
+<option value="tag">tagged</option>
+<option value="severity">with severity</option>
+<option value="src">in source package</option>
+<option value="maint">in packages maintained by</option>
+<option value="submitter">submitted by</option>
+<option value="owner">owned by</option>
+<option value="status">with status</option>
+<option value="affects">which affect package</option>
+<option value="correspondent">with mail from</option>
+<option value="newest">newest bugs</option>
+<option value="bugs">in bug</option>
+
+</select>
+<input type="text" name="_fo_searchvalue" value ="favicon.png">
+<!-- 0 -->
+</nobr>
+<br>
+<nobr><select name="_fo_searchkey">
+<option value="package">in package</option>
+<option value="tag">tagged</option>
+<option value="severity">with severity</option>
+<option value="src">in source package</option>
+<option value="maint">in packages maintained by</option>
+<option value="submitter">submitted by</option>
+<option value="owner">owned by</option>
+<option value="status">with status</option>
+<option value="affects">which affect package</option>
+<option value="correspondent">with mail from</option>
+<option value="newest">newest bugs</option>
+<option value="bugs">in bug</option>
+
+</select>
+<input type="text" name="_fo_searchvalue" value ="">
+<!-- 1 -->
+</nobr>
+
+</td>
+<td>
+<p>The same search fields are ORed, different fields are ANDed.</p>
+<p>Valid severities are critical, grave, serious, important, normal, minor, wishlist, fixed</p>
+<p>Valid tags are patch, wontfix, moreinfo, unreproducible, help, security, upstream, pending, confirmed, ipv6, lfs, d-i, l10n, newcomer, a11y, ftbfs, fixed-upstream, fixed, fixed-in-experimental, sid, experimental, potato, woody, sarge, sarge-ignore, etch, etch-ignore, lenny, lenny-ignore, squeeze, squeeze-ignore, wheezy, wheezy-ignore, jessie, jessie-ignore, stretch, stretch-ignore, buster, buster-ignore, bullseye, bullseye-ignore, bookworm, bookworm-ignore, trixie, trixie-ignore</p>
+</td>
+</tr>
+<tr><td><h2>Include Bugs</h2></td>
+<td><input type="hidden" name="_fo_concatenate_into_include_fo_includekey_fo_includevalue" value="1">
+<nobr><select name="_fo_includekey">
+<option value="subject">with subject containing</option>
+<option value="tags">tagged</option>
+<option value="severity">with severity</option>
+<option value="pending">with pending state</option>
+<option value="originator">with submitter containing</option>
+<option value="forwarded">with forwarded containing</option>
+<option value="owner">with owner containing</option>
+<option value="package">with package</option>
+
+</select>
+<input type="text" name="_fo_includevalue" value ="">
+<!-- 0 -->
+</nobr>
+
+
+</td>
+<td></td>
+</tr>
+<tr><td><h2>Exclude Bugs</h2></td>
+<td>
+<input type="hidden" name="_fo_concatenate_into_exclude_fo_excludekey_fo_excludevalue" value="1">
+<nobr><select name="_fo_excludekey">
+<option value="subject">with subject containing</option>
+<option value="tags">tagged</option>
+<option value="severity">with severity</option>
+<option value="pending">with pending state</option>
+<option value="originator">with submitter containing</option>
+<option value="forwarded">with forwarded containing</option>
+<option value="owner">with owner containing</option>
+<option value="package">with package</option>
+
+</select>
+<input type="text" name="_fo_excludevalue" value ="">
+<!-- 0 -->
+</nobr>
+
+
+
+</td>
+<td></td>
+</tr>
+<tr><td><h2>Categorize/<wbr>Order using</h2></td>
+<td><select name="ordering"><option value="normal" selected>normal</option>
+<option value="raw">raw</option>
+<option value="oldview">oldview</option>
+</td>
+<td></td>
+</tr>
+<tr><td><h2>Misc options</h2></td>
+<td>
+<input type="checkbox" name="repeatmerged" > Repeat Merged<br>
+<input type="checkbox" name="bug-rev" > Reverse Bugs<br>
+<input type="checkbox" name="pend-rev" > Reverse Pending<br>
+<input type="checkbox" name="sev-rev" > Reverse Severity<br>
+<input type="checkbox" name="noaffects" > No Bugs which affect packages<br>
+<select name="dist">
+<option value="">None</option>
+<option value="stable">stable</option>
+<option value="experimental">experimental</option>
+<option value="unstable" selected>unstable</option>
+<option value="testing">testing</option>
+<option value="nexttesting">nexttesting</option>
+<option value="oldoldstable">oldoldstable</option>
+<option value="oldstable">oldstable</option>
+</select><br>
+<select name="archive">
+<option value="0" selected>Unarchived</option>
+<option value="1">Archived</option>
+<option value="both">Archived and Unarchived</option>
+</select><br>
+<a href="javascript:toggle_extra_status_visible()">Toggle all extra information</a>
+</td>
+</tr>
+<tr><td><h2>Submit</h2></td><td colspan=2>
+<input type="submit" name="submit" value="Submit">
+</td></tr>
+</table>
+
+
+<hr>
+<ADDRESS>Debian bug tracking system administrator &lt;<A HREF="mailto:owner@bugs.debian.org">owner@bugs.debian.org</A>&gt;.
+Last modified:
+<!--timestamp-->Wed Apr  7 18:25:45 2021<!--end timestamp-->; 
+Machine Name:
+<!--machinename-->buxtehude<!--machinename-->
+<P>
+<A HREF="https://www.debian.org/Bugs/">Debian Bug tracking system</A>
+</p>
+<p>
+  Debbugs is free software and licensed under the terms of the GNU
+  Public License version 2. The current version can be obtained
+  from <a href="https://bugs.debian.org/debbugs-source/">https://bugs.debian.org/debbugs-source/</a>.
+</p>
+<p>
+Copyright © 1999 Darren O. Benham,
+1997,2003 nCipher Corporation Ltd,
+1994-97 Ian Jackson,
+2005-2017 Don Armstrong, and many other contributors.
+</p>
+</ADDRESS>
+</body></html>
